@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Malang Love Connection</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #222;
+      }
+
+      /* header */
+      .header {
+        background-color: #1a3d7c;
+        color: white;
+        padding: 20px;
+      }
+
+      .header h1 {
+        margin: 0;
+        font-size: 22px;
+      }
+
+      .header p {
+        margin: 5px 0 0 0;
+        font-size: 14px;
+      }
+
+      /* nav */
+      .nav {
+        background-color: #f0f0f0;
+        padding: 10px 20px;
+        border-bottom: 1px solid #ccc;
+      }
+
+      .nav a {
+        margin-right: 20px;
+        text-decoration: none;
+        color: #1a3d7c;
+        font-weight: bold;
+      }
+
+      .nav a:hover {
+        text-decoration: underline;
+      }
+
+      /* main content */
+      .main {
+        max-width: 700px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      .main h2 {
+        color: #1a3d7c;
+      }
+
+      /* form cari */
+      .form-cari {
+        margin-bottom: 20px;
+      }
+
+      .form-cari input[type="text"] {
+        padding: 6px;
+        width: 250px;
+        border: 1px solid #999;
+      }
+
+      .form-cari button {
+        padding: 6px 15px;
+        background-color: #e6e6e6;
+        border: 1px solid #999;
+        cursor: pointer;
+      }
+
+      .form-cari button:hover {
+        background-color: #d5d5d5;
+      }
+
+      /* kotak pengumuman */
+      .pengumuman {
+        border: 1px solid #ccc;
+        padding: 15px;
+        margin-bottom: 15px;
+      }
+
+      .pengumuman h3 {
+        margin: 0 0 5px 0;
+      }
+
+      .pengumuman .meta {
+        color: #777;
+        font-size: 13px;
+      }
+
+      /* footer */
+      .footer {
+        border-top: 1px solid #ccc;
+        padding: 15px 20px;
+        font-size: 13px;
+        color: #555;
+        margin-top: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- header -->
+    <div class="header">
+      <h1>MLC</h1>
+      <p>Informasi Bracket</p>
+    </div>
+
+    <!-- navigasi -->
+    <div class="nav">
+      <a href="#">Pengumuman</a>
+      <a href="#">Tentang</a>
+    </div>
+
+    <!-- konten utama -->
+    <div class="main">
+      <h2>Informasi Teknis</h2>
+
+      <!-- form pencarian -->
+      <form class="form-cari">
+        <label for="cariTim">Cari Nama tim</label><br />
+        <input type="text" id="cariTim" name="cariTim" />
+        <button type="submit">Cari</button>
+      </form>
+
+      <!-- daftar pengumuman -->
+      <div class="pengumuman">
+        <h3>Bracket Fase Grup</h3>
+        <p>Informasi tentang bracket fase grup akan diumumkan segera.</p>
+        <div class="meta">12 September 2026 &middot; informasi</div>
+      </div>
+
+      <div class="pengumuman">
+        <h3>Para Nama Juara Season Sebelumnya</h3>
+        <p>
+          Daftar nama juara season sebelumnya dapat dilihat di halaman arsip.
+        </p>
+        <div class="meta">15 September 2026 &middot; informasi</div>
+      </div>
+
+      <div class="pengumuman">
+        <h3>Kategori Game yang di lombakan</h3>
+        <p>
+          Kategori game yang akan dilombakan pada season ini adalah Mobile
+          Legends, PUBG Mobile, dan Free Fire.
+        </p>
+        <div class="meta">19 Oktober 2026 &middot; informasi</div>
+      </div>
+
+      <h2>Tentang aplikasi ini</h2>
+      <p>
+        Aplikasi ini dibuat untuk mempermudah peserta turnamen dalam mencari
+        informasi tentang bracket, pengumuman, dan hasil pertandingan.
+      </p>
+    </div>
+
+    <!-- footer -->
+    <div class="footer">
+      Pemrograman Web &middot; 2026 &middot; @MalangLoveConnection
+    </div>
+  </body>
+</html>
