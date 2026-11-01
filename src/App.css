@@ -1,0 +1,210 @@
+/* Pengaturan dasar halaman */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f6fa;
+  color: #263238;
+  line-height: 1.6;
+}
+
+/* Header sesuai className pada App.tsx */
+.header {
+  padding: 32px 20px;
+  text-align: center;
+  background-color: #1a3d7c;
+  color: #ffffff;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 32px;
+}
+
+.header p {
+  margin: 6px 0 0;
+  font-size: 16px;
+}
+
+/* Navigasi */
+.nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 14px 16px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e0e5ed;
+}
+
+.nav a {
+  display: inline-block;
+  padding: 10px 16px;
+  border-radius: 6px;
+  color: #1a3d7c;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.nav a:hover {
+  background-color: #e8eef8;
+}
+
+/* React Router v6 memberi class "active" pada NavLink yang aktif */
+.nav a.active {
+  background-color: #1a3d7c;
+  color: #ffffff;
+}
+
+/* Konten Dashboard */
+.main {
+  max-width: 1100px;
+  min-height: 300px;
+  margin: 24px auto;
+  padding: 24px;
+  text-align: left;
+  background-color: #ffffff;
+  border: 1px solid #e1e5ec;
+  border-radius: 10px;
+}
+
+.main h2,
+.berita h2 {
+  margin-top: 0;
+  color: #1a3d7c;
+}
+
+/* Konten Berita sesuai className pada Berita.tsx */
+.berita {
+  max-width: 1100px;
+  margin: 24px auto;
+  padding: 24px;
+}
+
+.berita h2 {
+  margin-bottom: 20px;
+}
+
+.berita-item {
+  margin-bottom: 16px;
+  padding: 20px;
+  border: 1px solid #e0e5ed;
+  border-left: 4px solid #1a3d7c;
+  border-radius: 8px;
+  background-color: #ffffff;
+  overflow-wrap: anywhere;
+}
+
+.berita-item h3 {
+  margin: 0 0 10px;
+  color: #1a3d7c;
+  font-size: 19px;
+  text-transform: capitalize;
+}
+
+.berita-item p {
+  margin: 0;
+  color: #45515f;
+  line-height: 1.7;
+}
+
+/* Footer sesuai className pada App.tsx */
+.footer {
+  margin-top: 32px;
+  padding: 20px;
+  text-align: center;
+  background-color: #1a3d7c;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+/* Class tambahan dari CSS sebelumnya, dipertahankan jika masih digunakan */
+.informasi {
+  margin-bottom: 18px;
+  padding: 20px;
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+  background-color: #ffffff;
+}
+
+.informasi h3 {
+  margin: 0 0 15px;
+  color: #1a3d7c;
+  font-size: 24px;
+}
+
+.informasi p {
+  margin: 8px 0;
+  font-size: 17px;
+}
+
+.informasi strong {
+  color: #333333;
+}
+
+.form-cari input {
+  max-width: 100%;
+  margin: 10px 8px 16px 0;
+  padding: 10px;
+}
+
+.form-cari button {
+  padding: 10px 16px;
+  cursor: pointer;
+}
+
+.tentang {
+  margin-top: 32px;
+}
+
+.tentang p {
+  margin: 12px 0;
+}
+
+.berita-error {
+  color: #c62828;
+}
+
+/* Tampilan layar kecil */
+@media (max-width: 600px) {
+  .header {
+    padding: 24px 16px;
+  }
+
+  .header h1 {
+    font-size: 26px;
+  }
+
+  .nav {
+    gap: 8px;
+  }
+
+  .nav a {
+    padding: 9px 12px;
+    font-size: 14px;
+  }
+
+  .main,
+  .berita {
+    margin: 16px;
+    padding: 18px;
+  }
+
+  .berita-item {
+    padding: 16px;
+  }
+
+  .footer {
+    padding: 16px;
+  }
+}
