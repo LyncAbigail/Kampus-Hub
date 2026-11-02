@@ -22,7 +22,7 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Dashboard />} />
-        <Route path="/berita" element={<Berita />} />
+        <Route path="/beritas" element={<Berita />} />
       </Routes>
 
       <footer className="footer">

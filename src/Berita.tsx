@@ -16,7 +16,7 @@ function Berita() {
     const fetchBerita = async () => {
       try {
         const response = await fetch(
-          "https://jsonplaceholder.typicode.com/posts",
+          "https://jsonplaceholder.typicode.com/post",
         );
         if (!response.ok) {
           throw new Error("Gagal mengambil data berita.");
