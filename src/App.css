@@ -53,7 +53,9 @@ body {
   color: #1a3d7c;
   text-decoration: none;
   font-weight: 600;
-  transition: background-color 0.2s ease, color 0.2s ease;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
 }
 
 .nav a:hover {
@@ -175,6 +177,78 @@ body {
   color: #c62828;
 }
 
+/* Search bar pada halaman Berita */
+.search-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  margin: 0 0 10px;
+}
+
+.search-input {
+  flex: 1;
+  min-width: 0;
+  padding: 13px 16px;
+  border: 1px solid #cbd3df;
+  border-radius: 8px;
+  outline: none;
+  background-color: #ffffff;
+  color: #263238;
+  font-size: 15px;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.search-input:focus {
+  border-color: #1a3d7c;
+  box-shadow: 0 0 0 3px rgba(26, 61, 124, 0.12);
+}
+
+.search-input::placeholder {
+  color: #8993a2;
+}
+
+.search-clear {
+  padding: 12px 16px;
+  border: 0;
+  border-radius: 8px;
+  background-color: #e8eef8;
+  color: #1a3d7c;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.search-clear:hover {
+  background-color: #d8e2f2;
+}
+
+.hasil-pencarian {
+  margin: 8px 0 18px;
+  color: #687386;
+  font-size: 14px;
+}
+
+.berita-kosong {
+  padding: 28px 20px;
+  border: 1px dashed #cbd3df;
+  border-radius: 8px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.berita-kosong p {
+  margin: 0 0 4px;
+  color: #263238;
+  font-weight: 600;
+}
+
+.berita-kosong span {
+  color: #687386;
+  font-size: 14px;
+}
+
 /* Tampilan layar kecil */
 @media (max-width: 600px) {
   .header {
@@ -204,7 +278,69 @@ body {
     padding: 16px;
   }
 
+  .search-container {
+    gap: 6px;
+  }
+
+  .search-input {
+    padding: 11px 12px;
+    font-size: 14px;
+  }
+
+  .search-clear {
+    padding: 11px 12px;
+  }
+
   .footer {
     padding: 16px;
   }
+}
+
+.data-mahasiswa {
+  margin-top: 30px;
+}
+
+.data-mahasiswa h3 {
+  color: #1a3d7c;
+  margin-bottom: 15px;
+}
+
+.data-mahasiswa .search-input {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+  margin-top: 15px;
+}
+
+.data-mahasiswa table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+
+.data-mahasiswa th,
+.data-mahasiswa td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.data-mahasiswa th {
+  background: #1a3d7c;
+  color: white;
+}
+
+.data-mahasiswa tbody tr:nth-child(even) {
+  background: #f2f5fa;
+}
+
+.data-mahasiswa tbody tr:hover {
+  background: #e8eef8;
 }
